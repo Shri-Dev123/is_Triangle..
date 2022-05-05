@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tringle quiz</title>
+    <link href="./styles.css" rel="stylesheet/css" />
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="main-nav">
+        <ul class="list">
+          <li class="list-items">
+            <a href="/index.html" class="link">Is Triangle...?</a>
+          </li>
+          <li class="list-items">
+            <a href="./Quiz.html" class="link active-link">Quiz</a>
+          </li>
+          <li class="list-items">
+            <a href="./hypotenuse.html" class="link">Hypotenuse</a>
+          </li>
+          <li class="list-items">
+            <a href="./area.html" class="link">Area</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <h2 class="main-heading">Triangle Quiz</h2>
+    <form id="quiz-form" class="flex-col">
+      <div class="quiz-container">
+        <p class="question1">
+          What is the third angle for the triangle where angle1 = 45° and angle2
+          = 45°?
+        </p>
+        <label for="first-option">
+          <input
+            id="first-option"
+            type="radio"
+            value="45°"
+            name="first-question"
+          />45°
+        </label>
+        <label for="second-option">
+          <input
+            id="second-option"
+            type="radio"
+            value="90°"
+            name="first-question"
+          />90°
+        </label>
+        <label for="third-option">
+          <input
+            id="third-option"
+            type="radio"
+            value="60°"
+            name="first-question"
+          />60°
+        </label>
+      </div>
+      <div class="quiz-container">
+        <p class="question2">
+          If a triangle has an angle of 90 degrees, what is it called?
+        </p>
+        <label for="2first-option">
+          <input
+            id="2first-option"
+            type="radio"
+            value="obtuse"
+            name="second-question"
+          />obtuse
+        </label>
+        <label for="2second-option">
+          <input
+            id="2second-option"
+            type="radio"
+            value="acute"
+            name="second-question"
+          />acute
+        </label>
+        <label for="2third-option">
+          <input
+            id="2third-option"
+            type="radio"
+            value="right angled"
+            name="second-question"
+          />right angled
+        </label>
+      </div>
+      <button id="submit-form" type="submit">Submit form</button>
+    </form>
+
+    <h1 id="output" class="quiz-output"></h1>
+
+    <script src="./quiz.js"></script>
+  </body>
+</html>

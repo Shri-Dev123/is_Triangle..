@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>hypotenuse</title>
+    <link href="./styles.css" rel="stylesheet/css" />
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="main-nav">
+        <ul class="list">
+          <li class="list-items">
+            <a href="/index.html" class="link">Is Triangle...?</a>
+          </li>
+          <li class="list-items">
+            <a href="./Quiz.html" class="link">Quiz</a>
+          </li>
+          <li class="list-items">
+            <a href="./hypotenuse.html" class="link active-link">Hypotenuse</a>
+          </li>
+          <li class="list-items">
+            <a href="./area.html" class="link">Area</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <h2 class="main-heading">Check Hypotenuse</h2>
+    <h2 class="hypotenuse-formula">
+      Length of Hypotenuse = sqrt(a² + b²)
+    </h2>
+    <form id="hypotenuse-form">
+      <div class="abc">
+        <label class="input-label" for="a-input">a = </label>
+        <input id="a-input" class="input" /> <br />
+      </div>
+      <div class="abc">
+        <label class="input-label" for="b-input">b = </label>
+        <input id="b-input" class="input" /> <br />
+      </div>
+      <button id="check-hypotenuse-btn" type="submit">Check Hypotenuse</button>
+    </form>
+    <h2 class="hypotenuse-output output"></h2>
+    <script src="./hypotenuse.js"></script>
+  </body>
+</html>
